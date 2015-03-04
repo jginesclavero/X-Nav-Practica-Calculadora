@@ -1,0 +1,27 @@
+#sandbox{
+	width: 19%;
+	background: #D8D8D8;
+}
+
+#name{
+	text-align: center;
+}
+
+#result{
+	width: 100%;
+	height: 100%;
+	
+}
+#sandbox .btn-toolbar .right{;
+	margin-left:9%;
+}
+#sandbox .btn-toolbar .left{
+	position: relative;
+	margin-left: 5%;
+}
+button{
+	width: 35px;
+	height: 35px;
+
+}
+	
