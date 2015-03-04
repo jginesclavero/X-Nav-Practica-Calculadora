@@ -1,6 +1,7 @@
 jQuery(document).ready(function() {
 
 	display = $("#result");
+	memory = 0;
 
 	$(".num , .operation").click(function() {
 		display.val(display.val().concat($(this).html()));
@@ -18,5 +19,18 @@ jQuery(document).ready(function() {
 
 	$("#C").click(function(){
 		display.val("");
+	});
+
+	$("#mem").click(function(){
+		memory = display.val();
+	});
+
+	$("#MR").click(function(){
+		if (display.val() != ""){
+			display.val(display.val().concat(memory));
+		}else{
+			display.val(memory);
+		}
+		
 	});
 });
